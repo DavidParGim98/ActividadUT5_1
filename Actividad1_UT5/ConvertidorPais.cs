@@ -8,11 +8,19 @@ using System.Windows.Data;
 
 namespace Actividad1_UT5
 {
-    class ConvertidorAlergenos : IValueConverter
+    class ConvertidorPais : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            throw new NotImplementedException();
+            if (value.ToString().Contains("Americana"))
+            {
+                return "assets/united_states.png";
+            }
+            else if (value.ToString().Contains("Mexicana"))
+            {
+                return "assets/mexico.png";
+            }
+            else return "assets/china.png";
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)

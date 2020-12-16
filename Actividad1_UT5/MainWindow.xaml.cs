@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,7 +22,7 @@ namespace Actividad1_UT5
     public partial class MainWindow : Window
     {
         List<Plato> platos = Plato.GetSamples("assets/");
-        List<String> tipoComida = new List<string>();        
+        ObservableCollection<string> tipoComida = new ObservableCollection<string>();        
 
         public MainWindow()
         {
@@ -34,6 +35,11 @@ namespace Actividad1_UT5
             tipoCom.ItemsSource = tipoComida;
 
             Comidas.DataContext = platos;
+        }
+
+        private void ListBoxItem_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            
         }
     }
 }

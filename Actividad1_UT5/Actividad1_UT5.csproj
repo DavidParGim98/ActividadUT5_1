@@ -64,7 +64,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="ArrayList.cs" />
-    <Compile Include="ConvertidorAlergenos.cs" />
+    <Compile Include="ConvertidorFuente.cs" />
+    <Compile Include="ConvertidorPais.cs" />
+    <Compile Include="ConvertidorAlergenosVisibilidad.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
