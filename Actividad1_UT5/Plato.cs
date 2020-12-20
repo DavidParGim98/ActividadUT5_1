@@ -8,7 +8,7 @@ using System.ComponentModel;
 
 namespace Actividad1_UT5
 {
-    class Plato : INotifyPropertyChanged
+    public class Plato : INotifyPropertyChanged
     {
         public string Nombre { get; set; }
         public string Imagen { get; set; }

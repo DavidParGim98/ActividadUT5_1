@@ -22,7 +22,8 @@ namespace Actividad1_UT5
     public partial class MainWindow : Window
     {
         List<Plato> platos = Plato.GetSamples("assets/");
-        ObservableCollection<string> tipoComida = new ObservableCollection<string>();        
+        ObservableCollection<string> tipoComida = new ObservableCollection<string>();
+        public Plato PlatoSeleccionado { get; set; }
 
         public MainWindow()
         {
