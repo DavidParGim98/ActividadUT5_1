@@ -37,10 +37,5 @@ namespace Actividad1_UT5
 
             Comidas.DataContext = platos;
         }
-
-        private void ListBoxItem_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            
-        }
     }
 }
